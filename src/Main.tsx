@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-// import {ActionButton, IButtonStyles, Icon, IIconStyles, Image, Persona, Stack} from 'office-ui-fabric-react';
+// import {ActionButton, IButtonStyles, Image, Persona, Stack} from 'office-ui-fabric-react';
 import {  DefaultButton, PrimaryButton, IButtonStyles, Text, ITextStyles, IStackTokens, Persona } from 'office-ui-fabric-react';
 import { Image, IImageProps, ImageFit } from 'office-ui-fabric-react/lib/Image';
 import { Stack } from 'office-ui-fabric-react/lib/Stack';
-import { Icon } from '@fluentui/react/lib/Icon';
+import { Icon, IIconProps, IIconStyles } from '@fluentui/react/lib/Icon';
 import { Pivot, PivotItem, PivotLinkFormat } from 'office-ui-fabric-react/lib/Pivot';
 import { Label } from 'office-ui-fabric-react/lib/Label';
 import { Nav, INavLink, INavStyles, INavLinkGroup } from 'office-ui-fabric-react/lib/Nav';
 import { SearchBox, ISearchBoxStyles } from 'office-ui-fabric-react/lib/SearchBox';
-import { IIconProps } from 'office-ui-fabric-react/lib/Icon';
 import { Card, ICardTokens, ICardSectionStyles, ICardSectionTokens } from '@uifabric/react-cards';
 
 
@@ -25,6 +24,17 @@ const navStyles: Partial<INavStyles> = {
   },
 };
 
+
+const iconStyles: Partial<IIconStyles> = {
+  root: {
+    background: 'white',
+    height: '100%',
+    boxSizing: 'border-box',
+    border: '1px solid #eee',
+    borderBottom: 'none',
+    overflowY: 'auto',
+  },
+};
 
 const buttonStyle: Partial<IButtonStyles> = {
   root: {
