@@ -64,3 +64,12 @@
         padding: $spacing--xl $spacing--xl 0 $spacing--xl;
     }
 }
+
+
+.content__card {
+    background: $color--white-900;
+    padding: $spacing--m;
+    @media screen and (min-width: $breakpoint--desktop){
+        padding: $spacing--l;
+    }
+}

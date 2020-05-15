@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-// import {ActionButton, IButtonStyles, Icon, IIconStyles, Image, Persona, Stack, IStackTokens} from 'office-ui-fabric-react';
-import { Text, ITextStyles } from 'office-ui-fabric-react';
+// import {ActionButton, IButtonStyles, Icon, IIconStyles, Image, Persona, Stack} from 'office-ui-fabric-react';
+import {  DefaultButton, PrimaryButton, IButtonStyles, Text, ITextStyles, IStackTokens, Persona } from 'office-ui-fabric-react';
 import { Image, IImageProps, ImageFit } from 'office-ui-fabric-react/lib/Image';
 import { Stack } from 'office-ui-fabric-react/lib/Stack';
 import { Icon } from '@fluentui/react/lib/Icon';
@@ -16,13 +16,20 @@ import { Card, ICardTokens, ICardSectionStyles, ICardSectionTokens } from '@uifa
 
 const navStyles: Partial<INavStyles> = {
   root: {
-
     background: 'white',
     height: '100%',
     boxSizing: 'border-box',
     border: '1px solid #eee',
     borderBottom: 'none',
     overflowY: 'auto',
+  },
+};
+
+
+const buttonStyle: Partial<IButtonStyles> = {
+  root: {
+    backgroundColor: 'black',
+
   },
 };
 
@@ -107,9 +114,10 @@ const imageProps: IImageProps = {
   onLoad: ev => console.log('image loaded', ev),
 };
 
-
+const sectionStackTokens: IStackTokens = { childrenGap: 30 };
 
 export let main = <div className="main">
+  
   <header className="main__header" dir="ltr">
     <div className="ms-Grid-row nav-bar">
       <div className="ms-Grid-col ms-sm8  nav-bar__item">
@@ -141,10 +149,17 @@ export let main = <div className="main">
       <div className="content-body">
         <h3 className="ms-fontSize-20	gutter--m-bottom">Call to Action</h3>
           <div className="">
-            <Card aria-label="Basic vertical card">
+            <Card aria-label="Basic vertical card" className="content__card"  tokens={sectionStackTokens}>
               <Card.Item>
-              <Text className="ms-fontSize-18">Basic vertical card</Text>
+                <Text className="ms-fontSize-18 ms-fontWeight-semibold">Basic vertical card</Text>
               </Card.Item>
+              <Card.Item>
+                <Text className="ms-fontSize-16 ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</Text>
+              </Card.Item>
+              <Stack horizontal tokens={sectionStackTokens}>
+                <DefaultButton text="Standard" />
+                <PrimaryButton text="Primary" styles={buttonStyle}/>
+              </Stack>
             </Card>
           </div>
 

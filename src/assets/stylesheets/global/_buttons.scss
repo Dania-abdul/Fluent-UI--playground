@@ -7,15 +7,13 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
-  cursor: pointer;
+  // cursor: pointer;
   vertical-align: middle;
   user-select: none;
-  background-color: transparent;
-  border: 0;
-  text-decoration: none;
+  // border: 0;
+  // text-decoration: none;
   display: inline-block;
-  transition: color $transition--normal, background-color $transition--normal, border-color $transition--normal;
-  padding: 0;
+  // transition: color $transition--normal, background-color $transition--normal, border-color $transition--normal;
 
   &:focus {
     outline: none;
