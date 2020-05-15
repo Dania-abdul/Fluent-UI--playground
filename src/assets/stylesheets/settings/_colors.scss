@@ -3,3 +3,37 @@
 // Variables concerning miscellaneous: colors...
 // ==========================================================================
 
+$color--blue-400: #146BE2;
+$color--blue-400--rgba-50: rgba( $color--blue-400, 0.1 );
+
+
+$color--purple-400: #6F2282;
+$color--purple-600: #A24BB9;
+
+$color--green-400: #0DB862;
+
+$color--orange-400: #FF5322;
+$color--orange-600: #FF856B;
+$color--orange-800: #FFAD9D;
+$color--orange-900: #FFD2C8;
+
+$color--white-600: #FEF9F9;
+$color--white-900: #FFFFFF;
+
+$color--grey-400: #E8EBED;
+
+$color--black-100: #000000;
+$color--black-100--rgba-50: rgba( $color--black-100, 0.5 );
+$color--black-400: #242E3C;
+$color--black-400--rgba-5: rgba( $color--black-400, 0.05 );
+$color--black-400--rgba-10: rgba( $color--black-400, 0.1 );
+$color--black-400--rgba-50: rgba( $color--black-400, 0.5 );
+$color--black-600: #1D3B54;
+
+// ==========================================================================
+// Implementations
+// ==========================================================================
+
+
+$color--text-light: $color--white-600;
+$color--text-dark: $color--black-600;

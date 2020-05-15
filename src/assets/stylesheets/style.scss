@@ -26,6 +26,7 @@
 
 @import 'tools/functions';
 @import 'tools/mixins';
+@import 'tools/misc';
 
 // ==========================================================================
 // VENDOR
@@ -57,12 +58,13 @@
 
 @import 'objects/helpers';
 
-@import 'objects/nav-bar.scss';
+@import 'objects/nav-bar';
+@import 'objects/menu';
 
 // ==========================================================================
 // PAGES
 // ==========================================================================
-@import 'pages/main-page.scss';
+@import 'pages/main-page';
 
 // ==========================================================================
 // OVERWRITES

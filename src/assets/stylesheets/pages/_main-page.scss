@@ -1,4 +1,66 @@
 .main__body{
-    background: red;
+
 }
 
+
+.wrap--main {
+    height: 100%;
+    background: $color--white-900;
+    display: flex;
+    flex-direction: column;
+    @include wrap--m;
+    @media screen and (min-width: $breakpoint--desktop){
+        flex-direction: row;
+    }
+  }
+
+
+.main-menu {
+    // -webkit-overflow-scrolling: touch;
+    // position: fixed;
+    // bottom: 0;
+    // top: 80px;
+    // transition: .267s cubic-bezier(.1,.9,.2,1);
+    width: 208px;
+    // min-width: 208px;
+    // overflow: auto;
+    height: 300px;
+    display: none;
+    @media screen and (min-width: $breakpoint--desktop){
+        display: block;
+        height: 100%;
+    }
+
+    .ms-FocusZone {
+        height: 100%;
+    }
+}
+
+.main-content {
+    background: $color--white-600;
+    height: 100%;
+    @media screen and (min-width: $breakpoint--desktop){
+        width: calc(100% - 208px);
+    }
+}
+
+.content-header {
+    height: 100px;
+    padding: $spacing--m $spacing--m 0 $spacing--m;
+    background: $color--purple-400;
+    color: $color--text-light;
+    @media screen and (min-width: $breakpoint--desktop){
+        height: 236px;
+        padding: $spacing--xl $spacing--xl 0 $spacing--xl;
+    }
+}
+
+.content-body {
+    height: 100%;
+    padding: $spacing--m $spacing--m 0 $spacing--m;
+    background: $color--white-600;
+    color: $color--text-dark;
+    @media screen and (min-width: $breakpoint--desktop){
+        padding: $spacing--xl $spacing--xl 0 $spacing--xl;
+    }
+}

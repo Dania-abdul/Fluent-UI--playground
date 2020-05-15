@@ -16,6 +16,10 @@ body,
   height: 100%;
 }
 
+.main {
+  overflow: hidden;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

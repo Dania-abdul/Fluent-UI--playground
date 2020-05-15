@@ -4,12 +4,14 @@
 // ==========================================================================
 
 
-@mixin gutter--m {
-    // padding-right: $gutter--mobile;
-    // padding-left: $gutter--mobile;
+@mixin wrap--m {
+    padding-right: $gutter--s;
+    padding-left: $gutter--s;
   
-    // @media only screen and (min-width: $breakpoint--desktop) {
-    //   padding-right: $gutter--desktop;
-    //   padding-left: $gutter--desktop;
-    // }
+    @media only screen and (min-width: $breakpoint--desktop) {
+      padding-right: $gutter--l;
+      padding-left:  $gutter--l;
+    }
   }
+
+

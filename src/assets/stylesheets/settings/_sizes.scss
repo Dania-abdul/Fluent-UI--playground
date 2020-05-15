@@ -44,11 +44,7 @@ $width--l-gutter: 1600px;
 // Implementations
 // ==========================================================================
 
-$spacing--text: $spacing--l;
-$spacing--lists: $spacing--s;
-$spacing--block: $spacing--xl;
-$spacing--menu-links: $spacing--s;
 
-$gutter--mobile: $gutter--s;
-$gutter--desktop: $gutter--m;
-$gutter--menu-links: $gutter--s;
+.gutter--m-bottom {
+    margin-bottom: $gutter--m;
+}
