@@ -1,0 +1,54 @@
+// ==========================================================================
+// SETTINGS | Sizes
+// Variables concerning sizes: spacing, gutters, widhts, breakpoints...
+// ==========================================================================
+
+// ----- Fluid sizing thresholds
+$threshold--mobile: 320px;
+$threshold--desktop: 1280px;
+
+// ----- Breakpoints
+$breakpoint--mobile: 480px;
+$breakpoint--mobile-l: 640px;
+$breakpoint--tablet: 768px;
+$breakpoint--tablet-l: 960px;
+$breakpoint--desktop: 1024px;
+$breakpoint--desktop-xl: 1280px;
+
+// ----- Spacings
+$spacing--xxs: 8px;
+$spacing--xs: 16px;
+$spacing--s: 20px;
+$spacing--m: 24px;
+$spacing--l: 32px;
+$spacing--xl: 40px;
+$spacing--xxl: 80px;
+
+// ----- Gutters
+$gutter--xs: 20px;
+$gutter--s: 25px;
+$gutter--m: 40px;
+$gutter--l: 60px;
+
+// ----- Max-widths
+$width--xs: 560px;
+$width--xs-gutter: 640px;
+$width--s: 760px;
+$width--s-gutter: 840px;
+$width--m: 1160px;
+$width--m-gutter: 1240px;
+$width--l: 1520px;
+$width--l-gutter: 1600px;
+
+// ==========================================================================
+// Implementations
+// ==========================================================================
+
+$spacing--text: $spacing--l;
+$spacing--lists: $spacing--s;
+$spacing--block: $spacing--xl;
+$spacing--menu-links: $spacing--s;
+
+$gutter--mobile: $gutter--s;
+$gutter--desktop: $gutter--m;
+$gutter--menu-links: $gutter--s;

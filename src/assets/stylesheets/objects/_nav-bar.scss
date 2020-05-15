@@ -1,0 +1,30 @@
+// ==========================================================================
+// OBJECTS | NAV BAR
+// ==========================================================================
+
+.nav-bar {
+    padding: 0 5vw;
+    @media screen and (min-width: 768px) {
+    }
+}
+
+
+div[class*="nav-bar__item"] {
+    margin: 10px 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar__item--nav {
+    justify-content: flex-end;
+}
+
+.nav-bar__logo {
+    @include fluid-sizing( 320px, 1280px, 32px, 42px, 'font-size' );
+}
+
+.nav-bar__nav {
+    display: flex;
+    justify-content: flex-end;
+}
