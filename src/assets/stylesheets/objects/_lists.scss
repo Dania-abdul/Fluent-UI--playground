@@ -3,14 +3,7 @@
 // ==========================================================================
 
 // ==========================================================================
-// OBJECTS | Lists / Inline (WYSIWYG)
-// -----
-// By default list styling has been removed in the global styling, because
-// in most instances lists don't have bullets (think about menu's etc).
-// We use a pseudo-element implementation to add bullets/decimals to lists
-// that come from WYSIWYG-editors via the .text--styled class.
-// Added benefit is that we have more freedom in styling the bullets/decimals
-// and greater assurance that all browsers display them the same.
+// OBJECTS | Lists
 // ==========================================================================
 
 .text--styled {
@@ -40,3 +33,5 @@
     }
   }
 }
+
+
