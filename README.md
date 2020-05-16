@@ -1,4 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deplyed on GithubPages
+https://dania-abdul.github.io/fluent-uI--playground/
 
 ## Available Scripts
 
