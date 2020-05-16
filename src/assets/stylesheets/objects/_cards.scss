@@ -1,0 +1,24 @@
+.card {
+    min-height: 200px;
+    background: $color--white-900;
+}
+
+.card__cta {
+    padding: $padding--m;
+    @media screen and (min-width: $breakpoint--desktop){
+        padding: $padding--l;
+    }
+}
+
+.card__image-text {
+    max-width: 600px;;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     > * {
+        width: 50%;
+    }
+    @media screen and (min-width: $breakpoint--desktop){
+        
+    }
+}

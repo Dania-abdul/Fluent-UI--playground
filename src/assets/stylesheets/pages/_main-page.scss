@@ -66,14 +66,6 @@
 }
 
 
-.content__card {
-    min-height: 200px;
-    background: $color--white-900;
-    padding: $padding--m;
-    @media screen and (min-width: $breakpoint--desktop){
-        padding: $padding--l;
-    }
-}
 
 .content__data {
     margin-bottom: $padding--s ;

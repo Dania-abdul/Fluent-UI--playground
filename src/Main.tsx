@@ -54,8 +54,8 @@ const searchStyles: Partial<ISearchBoxStyles> = {
 
 
 const imageProps: IImageProps = {
-  src: 'http://placehold.it/800x300',
   imageFit: ImageFit.cover,
+  height: '100%',
   onLoad: ev => console.log('image loaded', ev),
 };
 
@@ -125,6 +125,8 @@ function _onLinkClick(ev?: React.MouseEvent<HTMLElement>, item?: INavLink) {
 
 
 const sectionStackTokens: IStackTokens = { childrenGap: 30 };
+const cardTokens: IStackTokens = { padding: 24, childrenGap: 24 };
+
 
 export let main = <div className="main">
   
@@ -159,31 +161,40 @@ export let main = <div className="main">
       <div className="content-body">
           <h2 className="title--m">Call to action</h2>
           <div className="content__data">
-            <Card aria-label="Basic  card" className="content__card"  tokens={sectionStackTokens}>
-              <Card.Item>
-                <Text className="ms-fontSize-18 ms-fontWeight-semibold">Basic vertical card</Text>
-              </Card.Item>
-              <Card.Item>   
-               <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</Text>          
-              </Card.Item>
+            <Card aria-label="Basic card" className="card card__cta"  tokens={cardTokens}>
+              <Stack tokens={sectionStackTokens}>
+                <Card.Item>
+                  <Text className="ms-fontSize-18 ms-fontWeight-semibold">Basic vertical card</Text>
+                  </Card.Item>
+                  <Card.Item>
+                  <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</Text>
+                </Card.Item>
+              </Stack>
               <Stack horizontal tokens={sectionStackTokens}>
                 <DefaultButton text="Standard" />
                 <PrimaryButton text="Primary" styles={buttonStyle}/>
               </Stack>
             </Card>
           </div>
-          <h2 className="title--m">Image Text</h2>
+          <h2 className="title--m">Image Text horizontal</h2>
           <div className="content__data">
-            <Card aria-label="Basic horizontal card" className="content__card block-image-text"  tokens={sectionStackTokens}>
-              <Card.Item>
-                <Image
-                  {...imageProps}
-                  alt=' image fit value "cover" on an'
-                /> 
+            <Card aria-label="Basic horizontal card " className="card card__image-text"  >
+              <Card.Item fill>
+                <Image  
+                 {...imageProps} 
+                 src="https://placehold.it/180x135" 
+                 alt="Placeholder image." />
               </Card.Item>
 
               <Card.Item>
-                <Text>hi</Text>             
+                <Stack tokens={cardTokens}>
+                  <Card.Item>
+                    <Text className="ms-fontSize-18 ms-fontWeight-semibold">Basic vertical card</Text>
+                    </Card.Item>
+                    <Card.Item>
+                    <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</Text>
+                  </Card.Item>
+                </Stack>            
               </Card.Item>
             </Card>
           </div>
