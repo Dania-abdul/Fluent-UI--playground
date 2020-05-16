@@ -1,6 +1,6 @@
 // ==========================================================================
 // SETTINGS | Sizes
-// Variables concerning sizes: spacing, gutters, widhts, breakpoints...
+// spacing, gutters, widhts, breakpoints...
 // ==========================================================================
 
 // ----- Fluid sizing thresholds
@@ -16,19 +16,19 @@ $breakpoint--desktop: 1024px;
 $breakpoint--desktop-xl: 1280px;
 
 // ----- Spacings
-$spacing--xxs: 8px;
-$spacing--xs: 16px;
-$spacing--s: 20px;
-$spacing--m: 24px;
-$spacing--l: 32px;
-$spacing--xl: 40px;
-$spacing--xxl: 80px;
+$padding--xxs: 8px;
+$padding--xs: 16px;
+$padding--s: 20px;
+$padding--m: 24px;
+$padding--l: 32px;
+$padding--xl: 40px;
+$padding--xxl: 80px;
 
 // ----- Gutters
-$gutter--xs: 20px;
-$gutter--s: 25px;
-$gutter--m: 40px;
-$gutter--l: 60px;
+$gap--xs: 20px;
+$gap--s: 25px;
+$gap--m: 40px;
+$gap--l: 60px;
 
 // ----- Max-widths
 $width--xs: 560px;
@@ -46,5 +46,5 @@ $width--l-gutter: 1600px;
 
 
 .gutter--m-bottom {
-    margin-bottom: $gutter--m;
+    margin-bottom: $gap--m;
 }

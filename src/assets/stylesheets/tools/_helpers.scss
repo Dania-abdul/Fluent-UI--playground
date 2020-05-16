@@ -1,0 +1,19 @@
+
+
+.title--l {
+    font-size: $title--m;
+    margin-bottom: $padding--m ;
+    @media screen and (min-width: $breakpoint--desktop) {
+        font-size: $title--l;
+        margin-bottom: $padding--l;
+    }
+  }
+
+  .title--m {
+    font-size: $title--s;
+    margin-bottom: $padding--s ;
+    @media screen and (min-width: $breakpoint--desktop) {
+        font-size: $title--m;
+        margin-bottom: $padding--m;
+    }  
+  }

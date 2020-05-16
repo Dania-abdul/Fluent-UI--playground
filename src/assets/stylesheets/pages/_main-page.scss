@@ -46,30 +46,38 @@
 
 .content-header {
     height: 100px;
-    padding: $spacing--m $spacing--m 0 $spacing--m;
+    padding: $padding--m $padding--m 0 $padding--m;
     background: $color--purple-400;
     color: $color--text-light;
     @media screen and (min-width: $breakpoint--desktop){
         height: 236px;
-        padding: $spacing--xl $spacing--xl 0 $spacing--xl;
+        padding: $padding--xl $padding--xl 0 $padding--xl;
     }
 }
 
 .content-body {
-    height: 100%;
-    padding: $spacing--m $spacing--m 0 $spacing--m;
+    overflow: scroll;
+    padding: $padding--m $padding--m 0 $padding--m;
     background: $color--white-600;
     color: $color--text-dark;
     @media screen and (min-width: $breakpoint--desktop){
-        padding: $spacing--xl $spacing--xl 0 $spacing--xl;
+        padding: $padding--xl $padding--xl 0 $padding--xl;
     }
 }
 
 
 .content__card {
+    min-height: 200px;
     background: $color--white-900;
-    padding: $spacing--m;
+    padding: $padding--m;
     @media screen and (min-width: $breakpoint--desktop){
-        padding: $spacing--l;
+        padding: $padding--l;
+    }
+}
+
+.content__data {
+    margin-bottom: $padding--s ;
+    @media screen and (min-width: $breakpoint--desktop) {
+        margin-bottom: $padding--m;
     }
 }

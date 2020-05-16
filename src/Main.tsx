@@ -51,6 +51,14 @@ const searchStyles: Partial<ISearchBoxStyles> = {
   },
 };
 
+
+
+const imageProps: IImageProps = {
+  src: 'http://placehold.it/800x300',
+  imageFit: ImageFit.cover,
+  onLoad: ev => console.log('image loaded', ev),
+};
+
 const navLinkGroups: INavLinkGroup[] = [
   {
     links: [
@@ -116,14 +124,6 @@ function _onLinkClick(ev?: React.MouseEvent<HTMLElement>, item?: INavLink) {
 }
 
 
-const imageProps: IImageProps = {
-  src: 'http://placehold.it/800x300',
-  imageFit: ImageFit.cover,
-  width: 350,
-  height: 150,
-  onLoad: ev => console.log('image loaded', ev),
-};
-
 const sectionStackTokens: IStackTokens = { childrenGap: 30 };
 
 export let main = <div className="main">
@@ -154,17 +154,17 @@ export let main = <div className="main">
 
     <div className="main-content" >
       <div className="content-header">
-        <h2 className="ms-fontSize-32	">hello world</h2>
+        <h1 className="title--l">hello world</h1>
       </div>
       <div className="content-body">
-        <h3 className="ms-fontSize-20	gutter--m-bottom">Call to Action</h3>
-          <div className="">
-            <Card aria-label="Basic vertical card" className="content__card"  tokens={sectionStackTokens}>
+          <h2 className="title--m">Call to action</h2>
+          <div className="content__data">
+            <Card aria-label="Basic  card" className="content__card"  tokens={sectionStackTokens}>
               <Card.Item>
                 <Text className="ms-fontSize-18 ms-fontWeight-semibold">Basic vertical card</Text>
               </Card.Item>
-              <Card.Item>
-                <Text className="ms-fontSize-16 ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</Text>
+              <Card.Item>   
+               <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</Text>          
               </Card.Item>
               <Stack horizontal tokens={sectionStackTokens}>
                 <DefaultButton text="Standard" />
@@ -172,7 +172,21 @@ export let main = <div className="main">
               </Stack>
             </Card>
           </div>
+          <h2 className="title--m">Image Text</h2>
+          <div className="content__data">
+            <Card aria-label="Basic horizontal card" className="content__card block-image-text"  tokens={sectionStackTokens}>
+              <Card.Item>
+                <Image
+                  {...imageProps}
+                  alt=' image fit value "cover" on an'
+                /> 
+              </Card.Item>
 
+              <Card.Item>
+                <Text>hi</Text>             
+              </Card.Item>
+            </Card>
+          </div>
       </div>
     </div>
   </div>

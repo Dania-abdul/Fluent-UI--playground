@@ -5,12 +5,12 @@
 
 
 @mixin wrap--m {
-    padding-right: $gutter--s;
-    padding-left: $gutter--s;
+    padding-right: $gap--s;
+    padding-left: $gap--s;
   
     @media only screen and (min-width: $breakpoint--desktop) {
-      padding-right: $gutter--l;
-      padding-left:  $gutter--l;
+      padding-right: $gap--l;
+      padding-left:  $gap--l;
     }
   }
 
