@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fluent-uI--playground/static/css/main.c3d8ea79.chunk.css",
+    "main.js": "/fluent-uI--playground/static/js/main.5700dfab.chunk.js",
+    "main.js.map": "/fluent-uI--playground/static/js/main.5700dfab.chunk.js.map",
+    "runtime-main.js": "/fluent-uI--playground/static/js/runtime-main.d3f9fab5.js",
+    "runtime-main.js.map": "/fluent-uI--playground/static/js/runtime-main.d3f9fab5.js.map",
+    "static/js/2.4031f763.chunk.js": "/fluent-uI--playground/static/js/2.4031f763.chunk.js",
+    "static/js/2.4031f763.chunk.js.map": "/fluent-uI--playground/static/js/2.4031f763.chunk.js.map",
+    "index.html": "/fluent-uI--playground/index.html",
+    "precache-manifest.334aa06afd7cb69535a178046f693586.js": "/fluent-uI--playground/precache-manifest.334aa06afd7cb69535a178046f693586.js",
+    "service-worker.js": "/fluent-uI--playground/service-worker.js",
+    "static/css/main.c3d8ea79.chunk.css.map": "/fluent-uI--playground/static/css/main.c3d8ea79.chunk.css.map",
+    "static/js/2.4031f763.chunk.js.LICENSE.txt": "/fluent-uI--playground/static/js/2.4031f763.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d3f9fab5.js",
+    "static/js/2.4031f763.chunk.js",
+    "static/css/main.c3d8ea79.chunk.css",
+    "static/js/main.5700dfab.chunk.js"
+  ]
+}
